@@ -1,10 +1,13 @@
-import random
+a = float(input('ведите первое число'))
+b = float(input('ведите вервое число'))
 
-number_random = random.randint(1, 1)
-user_number = input("Ведите число ( от 1 до 5 ):")
+operator = input('Что сделать ? (+, -) ')
 
-if int(number_random) == number_random:
-    print('Вы угодали')
-    print(123)
-else:
-    print(f'вы не угодали, было число {number_random}')
+result = 0
+
+if operator == '+':
+    result = a + b
+    print(f'получаеться {result}')
+elif operator == '-':
+    result = a - b
+    print(f'получаеться {result}')
